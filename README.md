@@ -4,6 +4,9 @@ After deleting my last neovim config by error using "git rm -f" i have to start 
 
 Maybe delete my last config was some sort of luck? Anyway it was fun take days copying and pasting configs from other aksjdkajsd
 
+## FUCK A LOT OF FUNCTIONS ON LUA FILES ARE OVERRIDEN BECAUSE I COPIED THEM FROM DIFFERENT NEOVIM CONFIGS XDDDDDDDDDD  
+## I DON'T WAN'T TO DO THAT  
+
 ## Some features
 
 1.- My neovim is on windows, using it on "terminal" with admin poweshell.  
@@ -19,4 +22,5 @@ Maybe delete my last config was some sort of luck? Anyway it was fun take days c
 
 - C++ (main language and I think that's the only one right now XD)
 
-Enjoy this escurumucho of plugins that I copied from somewhere else.
+Enjoy this escurumucho of plugins that I copied from somewhere else.  
+
