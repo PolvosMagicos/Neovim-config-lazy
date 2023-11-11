@@ -21,6 +21,8 @@ return {
 
 		local keymap = vim.keymap -- for conciseness
 
+		local util = require("lspconfig/util")
+
 		-- enable keybinds only for when lsp server available
 		local on_attach = function(client, bufnr)
 			-- keybind options
@@ -170,6 +172,20 @@ return {
 				client.server_capabilities.signatureHelpProvider = false
 				on_attach(client, bufnr)
 			end,
+		})
+
+		lspconfig.rust_analyzer.setup({
+			on_attach = require("")
+      capabilities = capabilities,
+			filetypes = { "rust" },
+			root_dir = util.root_pattern("Cargo.toml"),
+			settings = {
+				["rust_analyzer"] = {
+					cargo = {
+						allFeatures = true,
+					},
+				},
+			},
 		})
 	end,
 }
